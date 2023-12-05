@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class MyClass {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        //number counters
+        int positiveNum = 0;
+        int negativeNum = 0;
+        int zeroNum = 0;
+        
+        //input for 10 numbers
+        for (int a = 1; a <= 10; a++)
+        {
+            System.out.print("Enter a number: ");
+            int num = input.nextInt();
+        
+            // number checker
+            if (num >= 1){
+                positiveNum++;
+            }
+            else if (num < 0){
+                negativeNum++;
+            }
+            else  
+                zeroNum++;
+            }
+        System.out.println("Number of positive numbers: " + positiveNum);
+        System.out.println("Number of negative numbers: " + negativeNum);
+        System.out.println("Number of zero numbers: " + zeroNum);
+        }   
+        
+}
